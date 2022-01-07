@@ -1,0 +1,1417 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+	font-family: 'Balsamiq Sans', cursive;
+}
+
+#loading
+{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	z-index: 9999999;
+	background: #e4eff3 url(https://media.giphy.com/media/xTk9ZvMnbIiIew7IpW/giphy.gif) no-repeat center;
+}
+
+body
+{
+	background-color: #EFEFEF;  
+	font-size: 100%;
+}
+
+::-webkit-scrollbar
+{
+	width: .5rem;
+}
+
+::-webkit-scrollbar-thumb
+{
+	height: 20%;
+	border-radius: 1rem;
+	background: linear-gradient(transparent,#FF910E);
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+	background: linear-gradient(transparent,#00C6FF);
+}
+
+header
+{
+	background-image: url(../img/img.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .60rem 12rem;
+	z-index: 100000;
+	transition: 1s;
+}
+
+header.sticky
+{
+	padding: .60rem 10rem;
+	background: #FF8519;
+}
+
+
+header .home
+{
+	background: #FF8519;
+	padding: .8rem .8rem .8rem .8rem;
+}
+
+header ul
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header ul li
+{
+	position: relative;
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	transition: 1s;
+}
+
+header .logo:hover
+{
+	cursor: pointer;
+}
+
+header .about:hover,
+header .hire:hover,
+header .contact:hover
+{
+	color: #FF910E;
+	font-size: 1.25rem;
+	cursor: pointer;
+}
+
+header .home:hover
+{
+	background-color: #FF700E;
+}
+
+header .about:hover,
+header .hire:hover,
+header .contact:hover
+{
+	font-size: 
+	color: #FF910E;
+}
+
+header .about,
+header .hire,
+header .contact
+{
+	background: none;
+}
+
+header ul li a
+{
+	position: relative;
+	margin: 0 2rem;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: .1rem;
+	font-weight: 500;
+	transition: 0.6s;
+}
+
+header .logo
+{
+	position: relative;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: .12rem;
+}
+
+header.sticky .home
+{
+	background: #FFFF00;
+}
+
+header.sticky .logo,
+header.sticky ul li a
+{
+	color: #000;
+}
+
+header.sticky .home:hover
+{
+	color: #111;
+}
+
+header.sticky ul li a:hover
+{
+	color: #fff;
+}
+
+.shin-homepage
+{
+	width: 100%;
+	height: 100vh;
+}
+
+.shin-homepage .left
+{
+	width: 50%;
+	height: 100vh;
+	float: left;
+}
+
+.shin-homepage .right
+{
+	width: 50%;
+	height: 100vh;
+	float: right;
+}
+
+.shin-homepage .left h2
+{
+	color: transparent;
+	background-image: url(../img/code.jpg);
+	background-size: contain;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	width: 30rem;
+	font-size: 3rem;
+	margin-left: 4rem;
+	margin-top: 7rem;
+}
+
+.shin-homepage .left .p1
+{
+	font-size: 1.4rem;
+	margin-left: 4rem;
+}
+
+.shin-homepage .left .p2
+{
+	margin-top: .3rem;
+	font-size: 1.6rem;
+	margin-left: .7rem;
+}
+
+.shin-homepage .left .p3
+{
+	font-size: 1.8rem;
+	margin-top: .4rem;
+	margin-left: .7rem;
+	margin-bottom: .7rem;
+}
+
+.slogan
+{
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: center;
+	width: 70%;
+	height: 15vh;
+	margin-top: 1rem;
+	margin-left: 4rem;
+	background-color: none;
+	border: .15rem solid #FF910E;
+	box-sizing: border-box;
+	box-shadow: .8rem .8rem .7rem .1rem #FF910E;
+}
+
+.paragraph
+{
+	margin-top: 3rem;
+	margin-left: 4rem;
+	width: 100%;
+	height: 30vh;
+	background-color: none;
+}
+
+.paragraph p
+{
+	font-size: 1.2rem;
+	font-weight: 200;
+}
+
+.paragraph span
+{
+	color: red;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+
+.button a
+{
+	padding: 0.3rem 1rem 0.3rem 1rem;
+	margin-left: 4rem;
+	color: #fff;
+	background: linear-gradient(90deg, #03A9F4, #F441A5, #FFEB3B, #03A9F4);
+	background-size: 400%;
+	cursor: pointer;
+	border-radius: 2rem;
+	font-size: 1.7rem;
+	position: relative;
+	text-align: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.button a:hover
+{
+	animation: animate 7s linear infinite;
+	filter: blur(.02rem);
+}
+
+@keyframes animate
+{
+	0%
+	{
+		background-position: 0%;
+	}
+
+	100%
+	{
+		background-position: 400%;
+	}
+}
+
+.right .img
+{
+	margin-top: 7rem;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	width: 60%;
+	height: 60vh;
+	background-image: url(../img/img2.png);
+	background-size: cover;
+	filter: drop-shadow(.7rem .3rem .6rem #5bd1d1);
+}
+
+.right .text
+{
+	position: relative;
+	width: 30vw;
+	height: 10vh;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.right .text h2
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	border: .1rem solid #5bd1d1;
+	box-shadow: .5rem .5rem .7rem .1rem #5bd1d1;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	color: #5bd1d1;
+	font-size: 2rem;
+}
+
+.about
+{
+	width: 100%;
+	height: 100vh;
+}
+
+.about .box
+{
+	position: relative;
+	top: 10rem;
+	left: 10%;
+	width: 15rem;
+	float: left;
+	transform-style: preserve-3d;
+	transform: perspective(10000rem) rotateY(-45deg);
+}
+
+.about .box div
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70vh;
+	transform-style: preserve-3d;
+	animation: anime 3s linear infinite;
+}
+
+.box div span
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 1rem;
+	background: linear-gradient(0deg, #F1F1F1, #BBB, #f1F1F1);
+
+}
+
+.box div span:nth-child(1)
+{
+	transform: rotateX(0deg);
+}
+
+.box div span:nth-child(2)
+{
+	transform: rotateX(45deg);
+}
+
+.box div span:nth-child(3)
+{
+	transform: rotateX(-45deg);
+}
+
+.box div span:nth-child(4)
+{
+	transform: rotateX(90deg);
+}
+
+@keyframes anime
+{
+	0%
+	{
+		transform: perspective(100rem) rotateX(0deg);
+	}
+	100%
+	{
+		transform: perspective(100rem) rotateX(360deg);
+	}
+}
+
+.about-text
+{
+	width: 65%;
+	height: 100vh;
+	float: right;
+}
+
+.about-text h3
+{
+	background-color: none;
+	color: #000;
+	text-transform: none;
+	font-size: 2.9rem;
+	margin-top: 5rem;
+	position: relative;
+}
+
+.about-text .p1
+{
+	font-size: 2.2rem;
+	margin-top: 1rem;
+}
+
+.about-text .p1 span
+{
+	font-size: 1rem;
+}
+
+.about-text .p2
+{
+	font-size: 1rem;
+	margin-top: .1rem;
+}
+
+.about-text .p3
+{
+	margin-top: 1.5rem;
+	font-size: 1.8rem;
+}
+
+.hire-page
+{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hire-page .boxA
+{
+	position: relative;
+	justify-content: center;
+	width: 90%;
+	height: 80vh;
+	border: .3rem solid #8F8F8f;
+	background-image: linear-gradient(to right, #62FF6F 22%, #FEFEFE 20%);
+}
+
+.hire-page .boxA .left-area
+{
+	background-image: url(../img/shin-china.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	left: 12%;
+	top: 50%;
+	transform: translate(0, -50%);
+	float: left;
+	width: 17rem;
+	height: 17rem;
+	border: 0.2rem solid orange;
+}
+
+.hire-page .text-area
+{
+	width: 65%;
+	height: 55vh;
+	position: relative;
+	display: flex;
+	top: 50%;
+	transform: translate(0, -50%);
+	flex-direction: column;
+	justify-content: center;
+	float: right;
+}
+
+.hire-page .text-area h3
+{
+	font-size: 3rem;
+}
+
+.hire-page .text-area h3 span
+{
+	font-size: 3.2rem;
+}
+
+.hire-page .text-area .p2
+{
+	font-size: 1.3rem;
+	padding-top: 1rem;
+}
+
+.hire-page .text-area .p2 a:visited
+{
+	color: green;
+}
+
+.hire-page .text-area .p2 a:active
+{
+	color: blue;
+}
+
+.hire-page .text-area .p2 span
+{
+	color: red;
+}
+
+.hire-page .text-area .button1
+{
+	margin-top: 1rem;
+	background-color: #6C9FFF;
+	border-radius: 1rem;
+	width: 7rem;
+	height: 2.2rem;
+}
+
+.hire-page .text-area .button1 a
+{
+	text-transform: uppercase;
+	color: #111;
+	font-size: 1rem;
+	position: relative;
+	display: flex;
+	text-align: center;
+	top: 50%;
+	transform: translate(0, -50%);
+	justify-content: center;
+	text-decoration: none;
+}
+
+/*contact form*/
+
+.contact-page
+{
+	width: 98.9vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.main
+{
+	margin-top: 5%;
+}
+
+.top
+{
+	width: 100%;
+	position: relative;
+	color: black;
+}
+
+.top h1
+{
+	width: 100%;
+	text-align: center;
+}
+
+.top p
+{
+	width: 100%;
+	text-align: center;
+}
+
+hr
+{
+	width:80%;
+	text-align: center;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	margin-top: 1.5rem;
+	height: .1rem;
+	border: none;
+	background: black;
+}
+
+.contactlr
+{
+	width: 100%;
+	height: 78vh;
+	position: relative;
+}
+
+.left1
+{
+	position: relative;
+	float: left;
+	left: 10%;
+	width: 30%;
+	top: 50%;
+	transform: translate(0, -50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 60vh;
+}
+
+.contact1,
+.add,
+.phone,
+.email
+{
+	font-size: 1.1rem;
+	width: 80%;
+	position: relative;
+	text-transform: uppercase;
+	background-color: none;
+	padding: 1rem;
+}
+
+.right1
+{
+	float: right;
+	margin-top: 3.5rem;
+	width: 50%;
+	padding: 2rem;
+}
+
+.right1 h2
+{
+	background: none;
+	text-transform: uppercase;
+	color: #111;
+	text-transform: bold;
+	font-size: 1.6rem;
+	font-weight: 600;
+	margin-bottom: 3rem;
+	width: 50%;
+}
+
+.right1 input[type="text"],
+.right1 input[type="email"],
+.right1 textarea
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 80%;
+	border: none;
+	background: transparent;
+	margin-bottom: .7rem;
+	font: 1.07rem;
+	height: 3rem;
+}
+
+.right1 textarea
+{
+	resize:none;
+	overflow: hidden;
+	height: 7rem;
+}
+
+.right1 input[type="submit"]
+{
+	background: #7495FF;
+	background-size: 400%;
+	cursor: pointer;
+	color: #111;
+	border: none;
+	font-size: 1rem;
+	padding: .5rem 1rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.right1 input[type="submit"]:hover
+{
+	color: #fff;
+	font-weight: 600;
+}
+
+.right1 form .btn1
+{
+	border-bottom: .2rem solid #FE441A;
+}
+
+.shin-footer
+{
+	background-color: #4A4A4B;
+	width: 100%;
+	height: 7vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	word-spacing: 0.2rem;
+}
+
+.shin-footer h2
+{
+	color: #fff;
+	font-weight: 100;
+}
+
+.shin-footer a
+{
+	text-transform: uppercase;
+	color: #F1F1F1;
+	text-decoration: none;
+	padding:.1rem;
+	
+}
+
+.shin-footer a:hover
+{
+	color: #F65A16;
+}
+
+.privacy h1
+{
+	margin-bottom: 1rem;
+}
+
+.privacy h2
+{
+	margin-top: .5rem;
+}
+
+.privacy span
+{
+	color: red;
+}
+
+.privacy a
+{
+	text-decoration: none;
+	color: #0000FF;
+}
+
+@media screen and (max-width: 1330px)
+{
+	html
+	{
+		font-size: 95%;
+	}
+
+	.shin-homepage .right .img
+	{
+		width: 80%;
+		height: 70vh;
+	}
+
+	.hire-page .boxA .left-area
+	{
+		width: 16rem;
+		height: 16rem;
+	}
+
+	.hire-page .boxA .text-area
+	{
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 1175px)
+{
+	html
+	{
+		font-size: 90%;
+	}
+
+	.about .about-text
+	{
+		width: 60%;
+	}
+
+	.contact-page .contactlr .right1
+	{
+		margin-top: 6rem;
+	}
+}
+
+@media screen and (max-width: 1058px)
+{
+	html
+	{
+		font-size: 85%;
+	}
+
+	header
+	{
+		padding: .80rem 8rem;
+	}
+
+	header ul li a
+	{
+		margin: 0 1.5rem;
+	}
+
+	.shin-homepage .right .img
+	{
+		width: 70%;
+		height: 50vh;
+	}
+
+	.contact-page .contactlr .right1
+	{
+		margin-top: 6rem;
+	}
+}
+
+@media screen and (max-width: 1022px)
+{
+	html
+	{
+		font-size: 80%;
+	}
+
+	.shin-homepage .left .slogan
+	{
+		width: 80%;
+	}
+
+	.contact-page .contactlr .right1
+	{
+		margin-top: 8rem;
+	}
+}
+
+@media screen and (max-width: 835px)
+{
+	html
+	{
+		font-size: 75%;
+	}
+
+	header .navigation
+	{
+		position: fixed;
+		width: 100%;
+		height: 4rem;
+		top: 3.5rem;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #000;
+		z-index: 10;
+		display: none;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+	}
+
+	header .navigation li a
+	{
+		color: #FFF;
+		font-size: 1.5rem;
+		margin-top: 1rem 0;
+	}
+
+	header .navigation .about,
+	header .navigation .hire,
+	header .navigation .contact
+	{
+		color: #FFF;
+	}
+
+
+	header .navigation li a:hover
+	{
+		color: #FE441A;
+	}
+
+	header .togglemenu
+	{
+		background-image: url(menu.png);
+		background-position: center;
+		background-size: 3rem;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		position: relative;
+		width: 2rem;
+		height: 2rem;
+		z-index: 11;
+	}
+
+	header .togglemenu.active
+	{
+		background-image: url(close.png);
+		background-position: center;
+		background-size: 3rem;
+		background-repeat: no-repeat;
+	}
+
+	header .navigation.active
+	{
+		display: flex;
+	}
+
+	.shin-homepage .left,
+	.shin-homepage .right
+	{
+		margin-top: 3rem;
+	}
+
+	.about .about-text
+	{
+		margin-top: 10rem;
+	}
+
+	.contact-page .main .top
+	{
+		margin-top: 10rem;
+	}
+
+	.shin-homepage .right .img
+	{
+		width: 100%;
+		height: 45vh;
+	}
+}
+
+@media screen and (max-width: 775px)
+{
+	.shin-homepage .left .slogan
+	{
+		width: 95%;
+	}
+
+	.shin-homepage .left h2,
+	.shin-homepage .left .p1,
+	.shin-homepage .left .slogan,
+	.shin-homepage .left .paragraph
+	{
+		margin-left: 0;
+	}
+
+	.shin-homepage .left .button a
+	{
+		margin-left: 1rem;
+		font-size: 2.1rem;
+	}
+
+	.shin-homepage .right .img
+	{
+		width: 85%;
+		height: 45vh;
+		left: 40%;
+	}
+
+	.shin-homepage .right .text
+	{
+		width: 90%;
+	}
+
+	.about .box
+	{
+		float: none;
+		top: 10%;
+		left: 40%;
+	}
+
+	.about .box div
+	{
+		height: 100vh;
+	}
+
+	.about .box span
+	{
+		width: 80%;
+		height: 100%;
+		opacity: .3;
+	}
+
+	.about .about-text
+	{
+		float: none;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.about .about-text p
+	{
+		width: 100%;
+		font-size: 1.4rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+
+	.about .about-text .p3
+	{
+		display: flex;
+		font-size: 2.5rem;
+		align-items: center;
+		position: relative;
+	}
+
+	.about .about-text .p2
+	{
+		width: 100%;
+		text-align: center;
+	}
+
+	.about .about-text .p1
+	{
+		font-size: 3rem;
+	}
+
+
+	.about .about-text .p1 span
+	{
+		font-size: 1.3rem;
+	}
+
+	.hire-page .boxA
+	{
+		top: 5%;
+	}
+
+	.hire-page .boxA .left-area
+	{
+		left: 3rem;
+		width: 17rem;
+		height: 17rem;
+	}
+
+	.contact-page .main .right1
+	{
+		margin-top: 6rem;
+	}
+
+	.contact-page .main .left1
+	{
+		top: 42%;
+	}
+}
+
+@media screen and (max-width: 680px)
+{
+	html
+	{
+		font-size: 70%;
+	}
+
+	.hire-page .boxA .left-area
+	{
+		top: 20%;
+		left: 5%;
+		float: none;
+		position: relative;
+	}
+
+	.hire-page .boxA .text-area
+	{
+		float: none;
+		width: 100%;
+		top: 30%;
+		margin-left: 1rem;
+	}
+
+	.hire-page .boxA .text-area .p1
+	{
+		position: relative;
+		text-align: left;
+		margin-top: 1rem;
+		width: 95%;
+	}
+
+	.contact-page .main .right1
+	{
+		margin-top: 8rem;
+	}
+}
+
+@media screen and (max-width: 652px)
+{
+	html
+	{
+		font-size: 60%;
+	}
+
+	.shin-homepage .left .slogan
+	{
+		width: 90%;
+		height: 12%;
+	}
+
+	.shin-homepage .right .img
+	{
+		width: 80%;
+		height: 40vh
+	}
+
+	.shin-homepage .right .text
+	{
+		left: 15rem;
+		width: 80%;
+	}
+
+}
+
+@media screen and (max-width: 566px)
+{
+	html
+	{
+		font-size: 55%;
+	}
+
+	.shin-homepage .left
+	{
+		float: none;
+		width: 100%;
+		height: 50vh;
+	}
+
+	.shin-homepage .left h2
+	{
+		margin-left: 2rem;
+		padding-top: 2rem;
+		margin-top: 0;
+	}
+
+	.shin-homepage .left .p1
+	{
+		margin-left: 2rem;
+	}
+
+	.shin-homepage .left .paragraph
+	{
+		margin-left: 2rem;
+	}
+
+	.shin-homepage .left .slogan
+	{
+		margin-left: 2rem;
+		width: 60%;
+	}
+
+	.shin-homepage .left .button a
+	{
+		margin-left: 2rem;
+		position: absolute;
+		top: 45%;
+	}
+
+	.shin-homepage .right
+	{	
+		margin-top: 0;
+		float: none;
+		width: 100%;
+		height: 50vh;
+	}
+
+	.shin-homepage .right .img
+	{
+		left: 40%;
+		width: 50%;
+		height: 35vh;
+		margin-top: 0;
+	}
+
+	.shin-homepage .right .text
+	{
+		left: 40%;
+		width: 50%;
+	}
+
+	.contact-page .main .left1
+	{
+		margin-top: 0;
+		top: 20rem;
+		float: none;
+		align-items: center;
+		width: 100%;
+		height: 40vh;
+		left: 0;
+	}
+
+	.contact-page .main .left1 .contact1,
+	.contact-page .main .left1 .add,
+	.contact-page .main .left1 .phone,
+	.contact-page .main .left1 .email
+	{
+		width: 100%;
+		text-align: center;
+	}
+
+	.contact-page .main .right1
+	{
+		float: none;
+		width: 100%;
+		height: 50vh;
+		margin-top: 0;
+	}
+
+	.contact-page .main .right1 form h2
+	{
+		width: 100%;
+		text-align: center;
+	}
+
+	.right1 input[type="text"],
+	.right1 input[type="email"],
+	.right1 textarea
+	{
+		position: relative;
+		height: 5rem;
+		left: 50%;
+		transform: translate(-50%);
+		width: 60%;
+	}
+
+	.right1 input[type="submit"]
+	{
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+		width: 7rem;
+		height: 3rem;
+		margin-top: 1rem;
+		padding: 0;
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 566px)
+{
+	.shin-homepage .right .img
+	{
+		left: 50%;
+		transform: translate(-50%);
+		width: 60%;
+		height: 40vh;
+	}
+
+	.shin-homepage .left .slogan
+	{
+		width: 60%;
+		height: 20%;
+	}
+
+	.shin-homepage .right .text
+	{
+		left: 50%;
+		transform: translate(-50%);
+	}
+
+	.about .about-text h3
+	{
+		width: 100%;
+		text-align: center;
+		padding: 2rem 0;
+	}
+
+	.about .about-text p
+	{
+		padding: .7rem 0;
+	}
+}
+
+@media screen and (max-width: 470px)
+{
+	html
+	{
+		font-size: 55%;
+	}
+
+	.shin-homepage .right .img
+	{
+		left: 40%;
+		width: 70%;
+		height: 40vh;
+	}
+
+	.shin-homepage .left .slogan
+	{
+		width: 70%;
+		height: 20%;
+	}
+
+	.shin-homepage .right .text
+	{
+		left: 40%;
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 415px)
+{
+	html
+	{
+		font-size: 50%;
+	}
+
+	.hire-page .boxA .left-area
+	{
+		width: 50%;
+		height: 24vh;
+	}
+
+	.shin-homepage .left .slogan
+	{
+		width: 70%;
+		height: 20%;
+	}
+
+	.hire-page .boxA .text-area h3,p
+	{
+		font-size: 1.2rem;
+		padding-bottom: .5rem;
+	}
+
+	.hire-page .boxA .button1
+	{
+		width: 25%;
+		height: 4vh;
+	}
+
+	.hire-page .boxA .button1 a
+	{
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 388px)
+{
+	.shin-homepage .right .img
+	{
+		width: 80%;
+		height: 40vh;
+	}
+}
+
+@media screen and (max-width: 365px)
+{
+	.hire-page .boxA .left-area
+	{
+		top: 15%;
+		width: 45%;
+		height: 18vh;
+		margin-bottom: 3rem;
+	}
+
+	.hire-page .boxA .button1 a
+	{
+		font-size: 1.2rem;
+		font-weight: 800;
+	}
+}
+
+@media screen and (max-width: 345px)
+{
+	.shin-homepage .left .slogan
+	{
+		width: 80%;
+		height: 20%;
+	}
+}
+
+@media screen and (max-width: 318px)
+{
+	.shin-homepage .right .img
+	{
+		left: 20rem;
+		width: 100%;
+		height: 30vh;
+	}
+
+	.shin-homepage .right .text
+	{
+		width: 80%;
+		left: 18rem;
+	}
+}
+
+@media screen and (max-width: 287px)
+{
+	html
+	{
+		font-size: 45%;
+	}
+
+	.hire-page .boxA .left-area
+	{
+		width: 60%;
+		height: 20vh;
+	}
+}
+
+@media screen and (max-width: 206px)
+{
+	html
+	{
+		font-size: 35%;
+	}
+
+	.shin-homepage .left .slogan
+	{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 250px)
+{
+	html
+	{
+		font-size: 40%;
+	}
+}
